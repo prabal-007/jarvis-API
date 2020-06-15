@@ -49,8 +49,12 @@ def takeCommand():
     return query
 
 def sendEmail(to, content):
-     
-
+    server = smtplib.SMTP('smtp.gail.com', 587)
+    server.ehlo()
+    server.starttls()
+    server.login('sender Email adress', 'sender Email password')
+    server.sendmail('sender Email adress', to, content)
+    server.close()  
 
 
 if __name__ == '__main__':
