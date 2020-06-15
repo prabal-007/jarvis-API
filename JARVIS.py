@@ -59,7 +59,7 @@ def sendEmail(to, content):
 
 if __name__ == '__main__':
     wishMe()
-    maildict = {"prabal": "gprabal000@gmail.com", "srijan": "srijansharma2k@gmail.com"}
+    maildict = {"person1": "person1@gmail.com", "person2": "person2@gmail.com"}
     while True:
         query= takeCommand().lower()
 
@@ -81,7 +81,7 @@ if __name__ == '__main__':
             webbrowser.open("stackoverflow.com")
 
         elif 'open python' in query:
-            codePath = "C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.1.1\\bin\\pycharm64.exe"
+            codePath = "*********************/python.exe"                # ** = path of the file/ide in which you run python
             os.startfile(codePath)
 
         elif 'the time' in query:
